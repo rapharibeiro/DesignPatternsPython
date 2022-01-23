@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "DesignPatternsPython"
+version = "0.1.0"
+description = "A study of design patterns using Python."
+authors = ["Raphael Ribeiro <ribeiro.crn@gmail.com>"]
+license = "MIT"
+readme = 'README.rst'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pylint = "^2.12.2"
+coverage = "^6.2"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-script = "designpatternspython.Creational.Singleton.__init__:run"
